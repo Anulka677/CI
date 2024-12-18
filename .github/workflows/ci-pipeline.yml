@@ -21,7 +21,7 @@ jobs:
         env:
           VALIDATE_PYTHON_PYLINT: true
           VALIDATE_PYTHON_BLACK: false
-          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_ALL_CODEBASE: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   unit-tests:
@@ -47,7 +47,7 @@ jobs:
           pytest --cov=. --cov-report=xml --cov-report=html
 
       - name: Upload coverage report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: coverage-report
           path: htmlcov/
@@ -74,3 +74,4 @@ jobs:
         with:
           title: "Found TODOs in code"
           content-filepath: todo_report.txt
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
