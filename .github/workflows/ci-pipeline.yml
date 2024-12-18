@@ -18,8 +18,6 @@ jobs:
 
       - name: Install Super-Linter
         uses: github/super-linter@v4
-
-      - name: Run Super-Linter
         env:
           VALIDATE_PYTHON_PYLINT: true
           VALIDATE_PYTHON_BLACK: false
