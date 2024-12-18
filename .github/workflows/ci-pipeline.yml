@@ -19,9 +19,8 @@ jobs:
       - name: Install Super-Linter
         uses: github/super-linter@v4
         env:
-          VALIDATE_PYTHON_PYLINT: true
-          VALIDATE_PYTHON_BLACK: false
           VALIDATE_ALL_CODEBASE: false
+          VALIDATE_PYTHON_PYLINT: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   unit-tests:
