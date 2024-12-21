@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='student-management-system11',
-    version='0.1.5',
+    version='0.1.4',
     author='Anna Adamiak',
     author_email='anna.adamiak@edu.uekat.pl',
     description='A simple student management system',
