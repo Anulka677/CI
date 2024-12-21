@@ -8,7 +8,7 @@ setup(
     description='A simple student management system',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/Anulka677/CD',
+    url='https://github.com/Anulka677/CI',
     packages=find_packages(),
     install_requires=open('requirements.txt').read().splitlines(),
     classifiers=[
