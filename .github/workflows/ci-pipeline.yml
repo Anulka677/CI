@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    tags:
+      - 'v*'  # Uruchamia workflow dla tagów zaczynających się od "v"
   pull_request:
     branches:
       - main
