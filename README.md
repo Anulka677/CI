@@ -13,3 +13,4 @@ This project implements a student management system, allowing the addition of st
 To run unit tests and generate a code coverage report:
 ```bash
 pytest --cov=. --cov-report=html
+Test workflow trigger
